@@ -11,6 +11,14 @@ import com.example.quiz1.database.UserHelper;
 import com.example.quiz1.fragment.FragmentAdapter;
 import com.google.android.material.tabs.TabLayout;
 
+//                      GRAMIDI
+//                      ```````
+//        Kelas           	: LA03
+//        Anggota      	    :
+//        Celine Margaretha Pranoto	(2401961873)
+//        Intan Saliya Utomo		(2440056902)
+//        Liauren Permata Sari 		(2440066052)
+
 public class MainActivity extends AppCompatActivity {
     TabLayout tabLayout;
     ViewPager2 viewPager;
