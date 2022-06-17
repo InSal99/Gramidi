@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtherActivity.BookDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivDetailImage"
+                android:layout_width="302dp"
+                android:layout_height="300dp"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="80dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/tvDetailName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="32dp"
+                android:text="Book Name"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                tools:layout_editor_absoluteX="118dp"
+                tools:layout_editor_absoluteY="20dp" />
+            <TextView
+                android:id="@+id/tvDetailWriter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Writer"
+                android:gravity="center"
+                android:layout_marginHorizontal="32dp"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="47dp"
+                tools:layout_editor_absoluteY="401dp" />
+
+            <TextView
+                android:id="@+id/tvDetailCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="32dp"
+                android:textSize="16sp"
+                android:gravity="center"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="401dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:orientation="horizontal"
+                android:paddingTop="32dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Penerbitan:"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+                        <TextView
+                            android:id="@+id/tvDetailPublisher"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Publisher" />
+
+                        <TextView
+                            android:id="@+id/tvDetailPublishDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Publish Date" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tvDetailIsbn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ISBN" />
+
+                    <TextView
+                        android:id="@+id/tvDetailHal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Halaman" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvDetailDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginBottom="32dp"
+                android:text="Descriptionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="449dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".OtherActivity.BookDetailActivity">-->
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/ivDetailBook"-->
+<!--                android:layout_width="350dp"-->
+<!--                android:layout_height="350dp"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tvDetailName"-->
+<!--                tools:srcCompat="@tools:sample/avatars" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvDetailRupiah"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="Rp. "-->
+<!--                android:textSize="28sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/ivDetailBook"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/ivDetailBook" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvDetailPrice"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Furniture Price"-->
+<!--                android:textSize="28sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/tvDetailRupiah"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/tvDetailRupiah" />-->
+
+<!--            <RatingBar-->
+<!--                android:id="@+id/rbDetail"-->
+<!--                style="@style/Widget.AppCompat.RatingBar"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:numStars="5"-->
+<!--                android:progressTint="#FFC107"-->
+<!--                android:rating="4.5"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/tvDetailRupiah"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tvDetailRupiah"-->
+<!--                tools:ignore="SpeakableTextPresentCheck" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvDetailName"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="32dp"-->
+<!--                android:text="Furniture Name"-->
+<!--                android:textSize="34sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/edtDetailQuantity"-->
+<!--                style="@style/Widget.AppCompat.EditText"-->
+<!--                android:layout_width="186dp"-->
+<!--                android:layout_height="48dp"-->
+<!--                android:layout_marginStart="12dp"-->
+<!--                android:layout_marginBottom="32dp"-->
+<!--                android:ems="10"-->
+<!--                android:hint="ex. 1"-->
+<!--                android:inputType="textPersonName"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/tvDetailQuantity"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/tvDetailQuantity" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnDetailBuy"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_marginBottom="32dp"-->
+<!--                android:text="Buy"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/ivDetailBook"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/edtDetailQuantity"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/edtDetailQuantity" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvDetailQuantity"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="40dp"-->
+<!--                android:textSize="20sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/rbDetail"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/rbDetail"-->
+<!--                tools:text="Qty :" />-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    </ScrollView>-->
+<!--</RelativeLayout>-->
+
+
+
+
+<!-- Kode sebelum ditambah scroll view #################################################################### -->
+
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".BookDetailActivity">-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="350dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tvDetailName"-->
+<!--        tools:srcCompat="@tools:sample/avatars" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvDetailRupiah"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:text="Rp. "-->
+<!--        android:textSize="28sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/imageView"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imageView" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvDetailPrice"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Book Price"-->
+<!--        android:textSize="28sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/tvDetailRupiah"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/tvDetailRupiah" />-->
+
+<!--    <RatingBar-->
+<!--        android:id="@+id/rbDetail"-->
+<!--        style="@style/Widget.AppCompat.RatingBar"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:numStars="5"-->
+<!--        android:progressTint="#FFC107"-->
+<!--        android:rating="4.5"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/tvDetailRupiah"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tvDetailRupiah" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvDetailName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:text="Book Name"-->
+<!--        android:textSize="34sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/edtDetailQuantity"-->
+<!--        style="@style/Widget.AppCompat.EditText"-->
+<!--        android:layout_width="186dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:layout_marginStart="12dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="ex. 1"-->
+<!--        android:inputType="textPersonName"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/textView3"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/textView3" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnDetailBuy"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:text="Buy"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/imageView"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/edtDetailQuantity"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/edtDetailQuantity" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:text="TextView"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/rbDetail"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/rbDetail"-->
+<!--        tools:text="Qty :" />-->
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

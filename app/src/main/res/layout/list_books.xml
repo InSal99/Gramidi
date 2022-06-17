@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listFurniture"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/ivListBook"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ivListBook"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tvNameListBook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Book Name"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvWriter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Writer"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toEndOf="@+id/ivListFurniture" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--            <RatingBar-->
+            <!--                android:id="@+id/rbListFurniture"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="20dp"-->
+            <!--                android:contentDescription="rating"-->
+            <!--                android:labelFor="@id/rbListFurniture"-->
+            <!--                android:progressTint="#FFC107"-->
+            <!--                android:rating="4.5"-->
+            <!--                app:layout_constraintStart_toEndOf="@+id/ivListFurniture"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/tvRatingListFurniture" />-->
+
+
+            <!--            </LinearLayout>-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:id="@+id/listFurniture"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<androidx.cardview.widget.CardView-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginTop="10dp"-->
+    <!--    app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/ivListBook"-->
+    <!--            android:layout_width="125dp"-->
+    <!--            android:layout_height="125dp"-->
+    <!--            android:layout_marginStart="5dp"-->
+    <!--            android:layout_marginTop="5dp"-->
+    <!--            android:layout_marginBottom="5dp"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            tools:srcCompat="@tools:sample/avatars" />-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical"-->
+    <!--            app:layout_constraintStart_toEndOf="@id/ivListBook"-->
+    <!--            app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvNameListBook"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginStart="20dp"-->
+    <!--                android:layout_marginTop="10dp"-->
+    <!--                android:text="Furniture Name"-->
+    <!--                android:textSize="24sp"-->
+    <!--                android:textStyle="bold"-->
+    <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvPriceListBook"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginStart="20dp"-->
+    <!--                android:layout_marginTop="5dp"-->
+    <!--                android:text="4.5"-->
+    <!--                android:textSize="18sp"-->
+    <!--                app:layout_constraintStart_toEndOf="@+id/ivListFurniture" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvRatingListBook"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginStart="20dp"-->
+    <!--                android:layout_marginTop="5dp"-->
+    <!--                android:text="Rp. 2.000.000-,"-->
+    <!--                android:textSize="18sp"-->
+    <!--                app:layout_constraintStart_toEndOf="@+id/ivListFurniture" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvDescriptionListBook"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginStart="20dp"-->
+    <!--                android:layout_marginTop="5dp"-->
+    <!--                android:text="this is furniturehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"-->
+    <!--                android:textSize="18sp"-->
+    <!--                android:maxWidth="250dp"-->
+    <!--                app:layout_constraintStart_toEndOf="parent"/>-->
+
+    <!--            &lt;!&ndash;            <RatingBar&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:id="@+id/rbListFurniture"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:layout_marginStart="20dp"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:contentDescription="rating"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:labelFor="@id/rbListFurniture"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:progressTint="#FFC107"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:rating="4.5"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                app:layout_constraintStart_toEndOf="@+id/ivListFurniture"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                app:layout_constraintTop_toBottomOf="@+id/tvRatingListFurniture" />&ndash;&gt;-->
+
+
+    <!--        </LinearLayout>-->
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+    <!--</androidx.cardview.widget.CardView>-->
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registerFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.RegisterFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/registerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="91dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="50dp"
+            android:text="Register"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtUsernameRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/edtEmailRegister"
+            app:layout_constraintStart_toStartOf="@+id/edtEmailRegister"
+            app:layout_constraintTop_toBottomOf="@+id/edtEmailRegister" />
+
+        <EditText
+            android:id="@+id/edtPasswordRegister"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/edtUsernameRegister"
+            app:layout_constraintStart_toStartOf="@+id/edtPhoneRegister"
+            app:layout_constraintTop_toBottomOf="@+id/edtPhoneRegister" />
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Register"
+            app:layout_constraintEnd_toEndOf="@+id/edtPasswordRegister"
+            app:layout_constraintStart_toStartOf="@+id/edtPasswordRegister"
+            app:layout_constraintTop_toBottomOf="@+id/edtPasswordRegister" />
+
+        <EditText
+            android:id="@+id/edtEmailRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvRegister" />
+
+        <EditText
+            android:id="@+id/edtPhoneRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/edtUsernameRegister"
+            app:layout_constraintStart_toStartOf="@+id/edtUsernameRegister"
+            app:layout_constraintTop_toBottomOf="@+id/edtUsernameRegister" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
